@@ -8,7 +8,7 @@ the character belongs them and in every character you have details about them (t
 ## Features
 
 - **Seasons Overview**: Explore all the seasons of the popular animated show "Rick and Morty."
-  The "Rick and Morty Project" app provides you with an overview of all the seasons from the TV show "Rick and Morty." You can learn about each season's unique storylines, characters, and memorable episodes. Dive into the fantastic world of science fiction and humor created by Justin Roiland and Dan Harmon.
+  The "Rick and Morty Project" app provides you with an overview of all the seasons from the TV show "Rick and Morty." You can learn about each season's unique storylines, characters, and memorable episodes. Dive into the fantastic world of science fiction and humor created by Justin Roland and Dan Harmon.
 
 
 - **Character Insights**: Discover the characters introduced in each season.
@@ -31,7 +31,7 @@ the character belongs them and in every character you have details about them (t
 - Utilizes Kotlin Coroutines for handling asynchronous tasks and background operations.
 
 ### Screenshots
-| [![Screen1](https://raw.githubusercontent.com/Natanel777/AndroidApp/main/screenShots/screenshot%202023-08-10%20173951.png)]() | [![Screen2](https://raw.githubusercontent.com/Natanel777/AndroidApp/main/screenShots/screenshot%202023-08-10%20173732.png)]() | [![Screen3](https://raw.githubusercontent.com/Natanel777/AndroidApp/main/screenShots/screenshot%202023-08-10%20173818.png)]() | [![Screen4](https://raw.githubusercontent.com/Natanel777/AndroidApp/main/screenShots/screenshot%202023-08-10%20173913.png)]() |
+| [![Screen1](https://raw.githubusercontent.com/Natanel777/AndroidApp/main/screenShots/Screenshot%202023-08-10%20210440.png)]() | [![Screen2](https://raw.githubusercontent.com/Natanel777/AndroidApp/main/screenShots/screenshot%202023-08-10%20173732.png)]() | [![Screen3](https://raw.githubusercontent.com/Natanel777/AndroidApp/main/screenShots/screenshot%202023-08-10%20173818.png)]() | [![Screen4](https://raw.githubusercontent.com/Natanel777/AndroidApp/main/screenShots/screenshot%202023-08-10%20173913.png)]() |
 |:-----------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|
 
 
