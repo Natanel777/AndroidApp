@@ -35,12 +35,6 @@ the character belongs them and in every character you have details about them (t
 |:-----------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|
 
 
-## Installation
-
-1. [Step 1]: [Installation instructions]
-2. [Step 2]: [Installation instructions]
-3. [Step 3]: [Installation instructions]
-
 ## Usage
 
 **Running the App**: After completing everything, you can build and run the app on an Android emulator or a physical device:
