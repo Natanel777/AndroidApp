@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">RickAndMortyProject</string>
+    <string name="title_main">Main</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_information">Information</string>
+    <string name="season">season</string>
+    <string name="all_seasons">all seasons</string>
+    <string name="earth_replacement_dimension">Earth (Replacement Dimension)</string>
+    <string name="character">character</string>
+    <string name="dot">•</string>
+    <string name="click_here_for_more_info">Click Here For More Info</string>
+    <string name="gender">Gender:</string>
+    <string name="type">Type:</string>
+    <string name="first_apperance">First Apperance:</string>
+    <string name="participated_in">Participated In:</string>
+    <string name="heart">heart</string>
+    <string name="update_the_ui">Update The App</string>
+    <string name="title_info">info</string>
+    <string name="title_favorites">favorites</string>
+    <string name="information">information</string>
+    <string name="info_text">WELCOME TO RICK AND MORTY APP \n \n Explore the multiverse with the Rick and Morty app! \n\n This app lets you dive into the exciting world of Rick and Morty \n\n where each season brings new adventures, characters, and more. \n\n Choose your favorite characters and add them to your list of favorites</string>
+    <string name="lets_go">Lets Go!</string>
+</resources>

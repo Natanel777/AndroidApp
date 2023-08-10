@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_season">
+
+    <fragment
+        android:id="@+id/navigation_season"
+        android:name="natanel.android.rickandmortyproject.ui.seasons.SeasonFragment"
+        android:label="@string/title_main"
+        tools:layout="@layout/fragment_season" >
+        <action
+            android:id="@+id/action_navigation_main_to_seasonDetailFragment"
+            app:destination="@id/navigation_seasonDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_information"
+        android:name="natanel.android.rickandmortyproject.ui.information.InformationFragment"
+        android:label="@string/title_information"
+        tools:layout="@layout/fragment_information" >
+        <action
+            android:id="@+id/action_navigation_information_to_navigation_main3"
+            app:destination="@id/navigation_season" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_seasonDetailFragment"
+        android:name="natanel.android.rickandmortyproject.ui.seasons.detail.SeasonDetailFragment"
+        android:label="fragment_season_detail"
+        tools:layout="@layout/fragment_season_detail">
+        <action
+            android:id="@+id/action_seasonDetailFragment_to_characterDetails"
+            app:destination="@id/navigation_characterDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_characterDetails"
+        android:name="natanel.android.rickandmortyproject.ui.character_details.CharacterDetails"
+        android:label="fragment_character_details"
+        tools:layout="@layout/fragment_character_details" />
+</navigation>
