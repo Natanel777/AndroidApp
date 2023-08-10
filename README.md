@@ -31,10 +31,9 @@ the character belongs them and in every character you have details about them (t
 - Utilizes Kotlin Coroutines for handling asynchronous tasks and background operations.
 
 ### Screenshots
-<img src="screenShots/screenshot 2023-08-10 173732.png" width="300" Height="500">
-<img src="ScreenShots/screenshot 2023-08-10 173818.png" width="300" Height="500">
-<img src="ScreenShots/screenshot 2023-08-10 173913.png" width="300" Height="500">
-<img src="ScreenShots/screenshot 2023-08-10 173951.png" width="300" Height="500">
+| [![Screen1](https://raw.githubusercontent.com/Natanel777/AndroidApp/main/screenShots/screenshot%202023-08-10%20173951.png)]() | [![Screen2](https://raw.githubusercontent.com/Natanel777/AndroidApp/main/screenShots/screenshot%202023-08-10%20173913.png)]() | [![Screen3](https://raw.githubusercontent.com/Natanel777/AndroidApp/main/screenShots/screenshot%202023-08-10%20173818.png)]() | [![Screen4](https://raw.githubusercontent.com/Natanel777/AndroidApp/main/screenShots/screenshot%202023-08-10%20173732.png)]() | [![Screen5](https://raw.githubusercontent.com/Natanel777/AndroidApp/main/screenShots/screenshot%202023-08-10%20173813.png)]() |
+|:-----------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|
+
 
 ## Installation
 
