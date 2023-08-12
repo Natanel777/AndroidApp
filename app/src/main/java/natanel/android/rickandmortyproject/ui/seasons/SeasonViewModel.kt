@@ -15,6 +15,7 @@ import natanel.android.rickandmortyproject.service.ApiService
 import natanel.android.rickandmortyproject.service.model.episode.Episode
 import natanel.android.rickandmortyproject.service.model.episode.EpisodeResponse
 import natanel.android.rickandmortyproject.service.model.season.mapper.getAllSeasons
+import java.io.IOException
 
 class SeasonViewModel(context: Application) : AndroidViewModel(context) {
 
@@ -31,7 +32,12 @@ class SeasonViewModel(context: Application) : AndroidViewModel(context) {
     private val _season = MutableLiveData<List<Season>>()
     val season: LiveData<List<Season>> = _season
 
+    //error for catching problems with the api
+    private val _error = MutableLiveData<String?>()
+    val error: LiveData<String?> = _error
+
     init {
+        try {
             viewModelScope.launch(Dispatchers.Main) {
                 _season.value = repo.getSeasons()
 
@@ -56,7 +62,16 @@ class SeasonViewModel(context: Application) : AndroidViewModel(context) {
                     }
                 }
             }
+        } catch (e: IOException) {
+            viewModelScope.launch (Dispatchers.Main) {
+                _error.value = "Please check you internet connection and try again"
+            }
+        } catch (e: Exception) {
+            viewModelScope.launch (Dispatchers.Main) {
+                _error.value = "there is a problem try again later"
+            }
         }
+    }
 
 
     //the func checks how much pages of EpisodeResponse there are

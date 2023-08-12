@@ -3,7 +3,7 @@
 ![App Screenshot](screenShots/rickandmortyinfo.jpg) <!-- Replace with an actual screenshot of your app -->
 
 Rick and Morty Project is an Android app that shows you lists of seasons, every season contains
-the character belongs them and in every character you have details about them (the information shows up helps to rick and morty database api).
+the character belongs them and in every character you have details about them (the information shows up based on rick and morty database api).
 
 ## Features
 

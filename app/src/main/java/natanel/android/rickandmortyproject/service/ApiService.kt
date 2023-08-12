@@ -17,7 +17,7 @@ interface ApiService {
     suspend fun getCharacterPerSeason(@Path("id") id: String): List<CharacterAPI>
 
 
-    companion object { // ccc
+    companion object {
         fun create(): ApiService =
             Retrofit.Builder()
                 .baseUrl("https://rickandmortyapi.com/api/")

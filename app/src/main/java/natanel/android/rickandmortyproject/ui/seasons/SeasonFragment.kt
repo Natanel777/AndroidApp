@@ -70,6 +70,14 @@ class SeasonFragment : Fragment() {
                 seasonViewModel.clearDatabase()
             }
         }
+        //error text for catching exceptions
+        seasonViewModel.error.observe(viewLifecycleOwner) { e ->
+            if (e != null) {
+                binding.textError.visibility = View.VISIBLE
+            } else {
+                binding.textError.visibility = View.GONE
+            }
+        }
     }
 
     override fun onDestroyView() {

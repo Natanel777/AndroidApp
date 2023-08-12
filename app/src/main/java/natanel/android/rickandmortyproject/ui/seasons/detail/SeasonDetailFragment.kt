@@ -36,10 +36,10 @@ class SeasonDetailFragment : Fragment() {
         return binding.root
     }
 
-    override  fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         //getting the current season from Parcelable
-        val season = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
+        val season = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             arguments?.getParcelable("Season", Season::class.java) ?: return
         } else {
             @Suppress("DEPRECATION")
@@ -61,9 +61,9 @@ class SeasonDetailFragment : Fragment() {
         }
 
         //updating the SearchView
-        binding.searchCharacters.setOnQueryTextListener(object : OnQueryTextListener{
+        binding.searchCharacters.setOnQueryTextListener(object : OnQueryTextListener {
             override fun onQueryTextSubmit(name: String?): Boolean {
-               seasonDetailViewModel.searchCharacter(name)
+                seasonDetailViewModel.searchCharacter(name)
                 binding.searchCharacters.clearFocus()
                 return false
             }
@@ -76,14 +76,14 @@ class SeasonDetailFragment : Fragment() {
 
 
         //using the characters and show them in
-        seasonDetailViewModel.character.observe(viewLifecycleOwner){
+        seasonDetailViewModel.character.observe(viewLifecycleOwner) {
             println(it)
-            with(binding.recycleCharacters){
-                adapter = CharacterAdapter(it){character->
+            with(binding.recycleCharacters) {
+                adapter = CharacterAdapter(it) { character ->
                     Bundle().apply {
                         putParcelable("character", character)
                         findNavController().navigate(
-                            R.id.action_seasonDetailFragment_to_characterDetails,this
+                            R.id.action_seasonDetailFragment_to_characterDetails, this
                         )
                         clearSearchViewFocus() //Clearing the textSearch text
                     }
@@ -92,7 +92,7 @@ class SeasonDetailFragment : Fragment() {
             }
         }
 
-
+        //Loading view while getting up the character from the api
         seasonDetailViewModel.isLoading.observe(viewLifecycleOwner) { isLoading ->
             if (isLoading) {
                 // Show loading UI (e.g., progress bar)
@@ -102,7 +102,17 @@ class SeasonDetailFragment : Fragment() {
                 binding.progressLoading.visibility = View.GONE
             }
         }
+
+        //error text for catching exceptions
+        seasonDetailViewModel.error.observe(viewLifecycleOwner) { e ->
+            if (e != null) {
+                binding.textError.visibility = View.VISIBLE
+            } else {
+                binding.textError.visibility = View.GONE
+            }
+        }
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()
